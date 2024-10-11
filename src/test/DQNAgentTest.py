@@ -100,7 +100,7 @@ class DQNAgent(AIInterface):
         
     def processing(self):
         # Just compute the input for the current frame
-        if self.frameData.empty_flag() or self.frameData.current_frame_number() <= 0:
+        if self.frameData.empty_flag or self.frameData.current_frame_number <= 0:
                 self.isGameJustStarted = True
                 return
                 
